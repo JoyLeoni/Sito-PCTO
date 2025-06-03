@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('images/irlanda.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* facoltativo, effetto "parallax" */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to bottom, #14572a, rgba(209, 201, 201, 0.637), #d4941e);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Bottone */
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d4941e; /* azzurro */
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #14572a; /* blu */
+  }
+
+  /* Slider Wrapper (per frecce fuori) */
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px auto;
+    position: relative;
+    max-width: 1000px;
+  }
+  
+  /* Contenitore slider */
+  .slider-container {
+    background: linear-gradient(to bottom,#14572a, white, #d4941e);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 800px;
+  }
+  
+  /* Slide */
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img,
+  .slide video {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .slide-text {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+  }
+  
+  /* Bottone Home centrato */
+  .button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  
+  #foto {
+    max-width: 35%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+    #foto_bandiera {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+/* Arrow buttons */
+.arrow {
+  background: linear-gradient(135deg, #14572a, #d4941e);
+  border: none;
+  font-size: 3rem;
+  color: #111;
+  cursor: pointer;
+  user-select: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.9);
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrow:hover {
+  background: linear-gradient(135deg, #0a2513, #6e4f15);
+  color: #000;
+  box-shadow: 0 0 20px rgba(255,255,255,1);
+}
