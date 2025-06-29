@@ -1,125 +1,116 @@
+/* Base */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #e0f7ff;
-    color: #1a1a1a;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header */
-  header {
-    background: linear-gradient(to bottom, #1e5d8d,#669cc9, #b1d8f5);
-    color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  /* Bottone */
-  .button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #87cefa; /* azzurro */
-    color: #000;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #5faee3; /* blu chiaro */
-  }
-  
-  /* Slider Wrapper (per frecce fuori) */
-  .slider-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 40px auto;
-    position: relative;
-    max-width: 1000px;
-  }
-  
-  /* Contenitore slider */
-  .slider-container {
-    background: linear-gradient(to bottom,#1e5d8d,#669cc9, #b1d8f5);
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 800px;
-  }
-  
-  /* Slide */
-  .slide {
-    display: none;
-  }
-  
-  .slide.active {
-    display: block;
-  }
-  
-  .slide img,
-  .slide video {
-    max-width: 100%;
-    border-radius: 10px;
-    display: block;
-  }
-  
-  .slide-text {
-    margin-top: 15px;
-    font-size: 1.1rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-  }
-
-  /* Arrow buttons */
-.arrow {
-  background: linear-gradient(135deg, #669cc9,#5faee3);
-  border: none;
-  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom, #b1d8f5, #669cc9, #1e5d8d);
   color: #111;
-  cursor: pointer;
-  user-select: none;
-  padding: 12px 18px;
+  margin: 0;
+  padding: 0 20px 40px 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to bottom, #1e5d8d, #669cc9, #b1d8f5);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.9);
-  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 40px;
 }
 
-.arrow:hover {
-  background: linear-gradient(135deg, #1e5d8d, #1a486b);
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.8rem;
+}
+
+header h2, header h3 {
+  margin: 4px 0;
+  font-weight: 400;
+}
+
+/* Immagine logo */
+#foto {
+  max-width: 25%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  margin-top: 20px;
+}
+
+/* Main sections */
+main section {
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  padding: 25px 30px;
+}
+
+main section h2 {
+  color: #1e5d8d;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+/* Paragrafi */
+main section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Video */
+video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Immagini affiancate */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.image-row img {
+  max-width: 160px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  height: auto;
+}
+
+/* Bottone per tornare indietro */
+.button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #1e5d8d;
+  color: #fff200;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #669cc9;
   color: #000;
-  box-shadow: 0 0 20px rgba(255,255,255,1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
-  
-  /* Bottone Home centrato */
-  .button-container {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  #foto {
-    max-width: 25%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .image-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-  }
-  
-  #foto {
-    max-width: 25%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
