@@ -2,26 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Work-Based Learning Path</title>
+  <title data-i18n="title">Work-Based Learning Path</title>
   <link rel="stylesheet" href="style_index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <style>
+    .language-switcher {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <select id="languageSelect">
+      <option value="en">🇬🇧 English</option>
+      <option value="it">🇮🇹 Italiano</option>
+    </select>
+  </div>
+
   <header>
-    <h1>My Work-Based Learning Journey</h1>
-    <p>Discover the educational experiences carried out during my 3 years of high school.</p>
+    <h1 data-i18n="mainTitle">My Work-Based Learning Journey</h1>
+    <p data-i18n="mainSubtitle">Discover the educational experiences carried out during my 3 years of high school.</p>
   </header>
 
   <main>
     <section class="year">
       <div class="year-content">
         <div class="year-text">
-          <h2>MAST (3rd year of high school)</h2>
-          <p>Research and development of a product to make it more efficient and eco-friendly on the market.</p>
-          <a href="MAST.html" class="button">Learn more</a>
+          <h2 data-i18n="mastTitle">MAST (3rd year of high school)</h2>
+          <p data-i18n="mastDesc">Research and development of a product to make it more efficient and eco-friendly on the market.</p>
+          <a href="MAST.html" class="button" data-i18n="learnMore">Learn more</a>
         </div>
         <div class="year-image">
-          <img src="images/mast.png" id="foto_mast" alt="MAST Logo">
+          <img src="images/mast.png" alt="MAST Logo">
         </div>
       </div>
     </section>
@@ -29,12 +44,12 @@
     <section class="year">
       <div class="year-content">
         <div class="year-text">
-          <h2>Abroad Internship – Dublin (4th year of high school)</h2>
-          <p>10 hours of internship in Dublin.</p>
-          <a href="DUBLINO.html" class="button">Learn more</a>
+          <h2 data-i18n="dublinTitle">Abroad Internship – Dublin (4th year of high school)</h2>
+          <p data-i18n="dublinDesc">10 hours of internship in Dublin.</p>
+          <a href="DUBLINO.html" class="button" data-i18n="learnMore">Learn more</a>
         </div>
         <div class="year-image">
-          <img src="images/irlanda.svg" id="foto_mast" alt="Ireland Logo">
+          <img src="images/irlanda.svg" alt="Ireland Logo">
         </div>
       </div>
     </section>
@@ -42,12 +57,12 @@
     <section class="year">
       <div class="year-content">
         <div class="year-text">
-          <h2>ETIC S.R.L (4th year of high school)</h2>
-          <p>Internship in an IT company: development of applications for 3D environment visualization.</p>
-          <a href="ETIC.html" class="button">Learn more</a>
+          <h2 data-i18n="eticTitle">ETIC S.R.L (4th year of high school)</h2>
+          <p data-i18n="eticDesc">Internship in an IT company: development of applications for 3D environment visualization.</p>
+          <a href="ETIC.html" class="button" data-i18n="learnMore">Learn more</a>
         </div>
         <div class="year-image">
-          <img src="images/etic.webp" id="foto" alt="ETIC Logo">
+          <img src="images/etic.webp" alt="ETIC Logo">
         </div>
       </div>
     </section>
@@ -55,26 +70,27 @@
     <section class="year">
       <div class="year-content">
         <div class="year-text">
-          <h2>DILAXIA S.p.A (5th year of high school)</h2>
-          <p>Worked as a Desktop Support, helping with various small tasks within the company.</p>
-          <a href="DILAXIA.html" class="button">Learn more</a>
+          <h2 data-i18n="dilaxiaTitle">DILAXIA S.p.A (5th year of high school)</h2>
+          <p data-i18n="dilaxiaDesc">Worked as a Desktop Support, helping with various small tasks within the company.</p>
+          <a href="DILAXIA.html" class="button" data-i18n="learnMore">Learn more</a>
         </div>
         <div class="year-image">
-          <img src="images/dilaxia_logo.png" id="foto" alt="DILAXIA Logo">
+          <img src="images/dilaxia_logo.png" alt="DILAXIA Logo">
         </div>
       </div>
     </section>
 
-   <section class="year">
+    <section class="year">
       <div class="year-content">
         <div class="year-text">
-          <h2>Usa per studio</h2>
-          <p></p>
-          <a href="Studio.html" class="button">Learn more</a>
+          <h2 data-i18n="usaTitle">Study in the USA</h2>
+          <p data-i18n="usaDesc"></p>
+          <a href="Studio.html" class="button" data-i18n="learnMore">Learn more</a>
         </div>
       </div>
     </section>
-    
   </main>
+
+  <script src="lang.js"></script>
 </body>
 </html>
