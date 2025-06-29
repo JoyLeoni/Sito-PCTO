@@ -1,36 +1,40 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom, #fffbe6, #fefbd8);
+  color: #111; /* quasi nero per leggibilità */
   margin: 0;
   padding: 0;
-  background-color: #fff200; /* Giallo chiaro di sfondo */
-  color: #000000; /* Testo nero */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* Header */
 header {
-  background-color: #000000; /* Nero */
-  color: #fff200; /* Giallo */
+  background: linear-gradient(to bottom, #000000, #333300); /* sfondo nero sfumato verso giallo scuro */
+  color: #fff200; /* giallo brillante per testo */
+  padding: 40px 20px;
   text-align: center;
-  padding: 20px;
 }
 
-main {
-  padding: 20px;
-}
-
+/* Sezioni principali */
 .year {
-  background-color: #ffffff;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border: 2px solid #000000; /* Bordo nero */
+  background: linear-gradient(to bottom right, #fffacd, #fdf6b2); /* giallo pallido */
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  border: 2px solid #000000;
 }
 
+/* Layout interno */
 .year-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .year-text {
@@ -44,28 +48,49 @@ main {
 }
 
 .year-image img {
-  max-width: 35%;
+  max-width: 60%;
   height: auto;
-  border-radius: 10px;
-  margin: 0 auto;
-  display: block;
-  border: 2px solid #000000;
+  border-radius: 15px;
+  border: 3px solid #000000;
+  background-color: #fff;
 }
 
+/* Pulsanti */
 .button {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #000000; /* Nero */
-  color: #fff200; /* Giallo */
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #000000;
+  color: #fff200;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #fff200; /* Giallo */
-  color: #000000; /* Nero */
-  border: 1px solid #000000;
+  background-color: #fff200;
+  color: #000000;
+  border: 1px solid #000;
+}
+
+/* Immagine finale (usa per studio ecc) */
+#foto {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .year-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .year-image img {
+    max-width: 80%;
+  }
 }
