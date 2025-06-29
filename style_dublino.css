@@ -1,129 +1,97 @@
+/* Base */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-image: url('images/irlanda.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* facoltativo, effetto "parallax" */
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header */
-  header {
-    background: linear-gradient(to bottom, #14572a, rgba(209, 201, 201, 0.637), #d4941e);
-    color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  /* Bottone */
-  .button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #d4941e; /* azzurro */
-    color: #000;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-
-  .button:hover {
-    background-color: #14572a; /* blu */
-  }
-
-  /* Slider Wrapper (per frecce fuori) */
-  .slider-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 40px auto;
-    position: relative;
-    max-width: 1000px;
-  }
-  
-  /* Contenitore slider */
-  .slider-container {
-    background: linear-gradient(to bottom,#14572a, white, #d4941e);
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 800px;
-  }
-  
-  /* Slide */
-  .slide {
-    display: none;
-  }
-  
-  .slide.active {
-    display: block;
-  }
-  
-  .slide img,
-  .slide video {
-    max-width: 100%;
-    border-radius: 10px;
-    display: block;
-  }
-  
-  .slide-text {
-    margin-top: 15px;
-    font-size: 1.1rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-  }
-  
-  /* Bottone Home centrato */
-  .button-container {
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .image-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-  }
-  
-  #foto {
-    max-width: 35%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-    #foto_bandiera {
-    max-width: 20%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-/* Arrow buttons */
-.arrow {
-  background: linear-gradient(135deg, #14572a, #d4941e);
-  border: none;
-  font-size: 3rem;
-  color: #111;
-  cursor: pointer;
-  user-select: none;
-  padding: 12px 18px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.9);
-  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom, #009B48, #FFFFFF, #FF7900); /* Verde, bianco, arancione */
+  color: #111111;
+  margin: 0;
+  padding: 0 20px 40px 20px;
 }
 
-.arrow:hover {
-  background: linear-gradient(135deg, #0a2513, #6e4f15);
-  color: #000;
-  box-shadow: 0 0 20px rgba(255,255,255,1);
+/* Header */
+header {
+  background: linear-gradient(to bottom, #009B48, #FFFFFF, #FF7900);
+  color: #111111;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-bottom: 40px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.8rem;
+}
+
+header h2 {
+  margin: 4px 0;
+  font-weight: 400;
+}
+
+/* Immagine bandiera */
+#foto_bandiera {
+  max-width: 25%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  margin-top: 20px;
+}
+
+/* Main section */
+main section {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  color: #111111;
+}
+
+main section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Immagini affiancate */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.image-row img {
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  height: auto;
+}
+
+/* Bottone per tornare indietro */
+.button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #009B48; /* verde */
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid #ffffff;
+}
+
+.button:hover {
+  background-color: #FF7900; /* arancione */
+  color: #111111;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
