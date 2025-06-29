@@ -53,10 +53,10 @@ main section h2 {
   font-size: 2rem;
 }
 
-/* Paragrafi */
+/* Paragrafi - dimensioni aggiornate */
 main section p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.2rem;      /* 1.2rem come nel file giallo */
+  line-height: 1.6;       /* line-height 1.6 per miglior leggibilità */
   color: #333;
   margin-bottom: 15px;
 }
