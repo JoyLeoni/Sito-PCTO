@@ -44,9 +44,10 @@ main {
   margin-bottom: 25px;
   box-shadow: 0 5px 15px rgba(212, 209, 100, 0.3);
   color: #4b3b00;
-  font-size: 1.15rem;
-  line-height: 1.6;
+  font-size: 1.2rem;   /* modificato da 1.15rem a 1.2rem */
+  line-height: 1.6;    /* confermato 1.6 per leggibilità */
 }
+
 
 /* Grassetto dentro il testo */
 .contenuto strong {
