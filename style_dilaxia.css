@@ -30,26 +30,25 @@ header {
 
 /* Contenuto principale */
 main {
-  flex-grow: 1;
-  max-width: 900px;
+  max-width: 960px;
   margin: 40px auto 60px;
   padding: 0 20px;
+  flex-grow: 1;
 }
 
-/* Sezione contenuto testo */
+/* Paragrafi */
 .contenuto p {
   background-color: #fffbea;
   border-radius: 12px;
-  padding: 20px;
+  padding: 20px 24px;
   margin-bottom: 25px;
   box-shadow: 0 5px 15px rgba(212, 209, 100, 0.3);
   color: #4b3b00;
-  font-size: 1.2rem;   /* modificato da 1.15rem a 1.2rem */
-  line-height: 1.6;    /* confermato 1.6 per leggibilità */
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
-
-/* Grassetto dentro il testo */
+/* Grassetto nel testo */
 .contenuto strong {
   color: #b19a00;
 }
@@ -72,7 +71,7 @@ main {
   font-weight: 600;
   font-size: 1rem;
   box-shadow: 0 3px 6px rgba(180, 150, 0, 0.6);
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .button:hover {
